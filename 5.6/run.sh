@@ -3,6 +3,9 @@
 set -m
 set -e
 
+chown -R mysql.mysql /var/lib/mysql
+
+
 VOLUME_HOME="/var/lib/mysql"
 CONF_FILE="/etc/mysql/conf.d/my.cnf"
 LOG="/var/log/mysql/error.log"
